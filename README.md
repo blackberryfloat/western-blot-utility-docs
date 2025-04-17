@@ -8,9 +8,9 @@ This repo is for user facing documentation of the Western Blot Utility only. All
 
 ## Contribution
 
-Anyone and everyone that is a user of the Western Blot Utility is encouraged to contribute to the documentation. If you find an issue with the docs please create an issues. For the best results, create a pull request with recommend changes.
+Anyone and everyone that is a user of the Western Blot Utility is encouraged to contribute to the documentation. If you find an issue with the docs please create an issues. For the best results, create a pull request with recommend changes that is linked to the created issue.
 
-That Western Blot Utility itself is not open-source but the documentation for it is. Unless you explicity state otherwise, any contribution intentionally submitted for inclusion in this repository shall be considered available for use by anyone in any context without any additional terms or conditions.
+The Western Blot Utility application itself is not open-source, but the documentation for it is. Unless you explicity state otherwise, any contribution intentionally submitted for inclusion in this repository shall be considered available for use by anyone in any context without any additional terms or conditions.
 
 ## Release Process
 

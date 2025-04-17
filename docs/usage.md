@@ -3,6 +3,7 @@
 ## Key Terminology
 
 | Name | Description |
+| :- | :- |
 | Experiment | A project that explores the impact of a combination of compounds and doses on substances in order to gain insight into the viability of a compound for drug use. For this application, an experiment is represented by a folder on the file system. Typically this is a folder of images.|
 | Image | An image is the digital scan of an optimal exposure capture of a blot stained with a specific antibody. |
 | Lane | This represents a singular case that contains unique set of independent variable such as a drug type, dose, and time factor.|

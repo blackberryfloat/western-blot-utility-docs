@@ -44,10 +44,7 @@ jobs:
         run: mdbook build
       - name: Add AdSense script to HTML files
         run: |
-          find ./book -name '*.html' -exec sed -i 's|<head>|<head><meta name="google-adsense-account" content="ca-pub-7754158240191404"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7754158240191404" crossorigin="anonymous"></script>|' {} +
-      - name: ads.txt
-        run: |
-          echo "google.com, pub-7754158240191404, DIRECT, f08c47fec0942fa0" > ./book/ads.txt
+          find ./book -name '*.html' -exec sed -i 's|<head>|<head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7754158240191404" crossorigin="anonymous"></script>|' {} +
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

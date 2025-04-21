@@ -1,11 +1,11 @@
 # Audit
 
-As we mentioned before, producing accurate results is very important to us. All data measurements are taken from the raw image without any scaling. All calculations are based on published methods and have an extensive suite of automated test cases to back them. This is coupled with manual verification of the data by beta users. That being said, mistakes can happen so we provided the audit functionality to empower you to double check our work if you so choose.
+Producing accurate results is our top priority. All data measurements are taken directly from the raw image without any scaling. Calculations are based on published methods and are supported by an extensive suite of automated test cases, along with manual verification by beta users. However, mistakes can happen, so we provide the audit functionality to empower you to double-check our work if needed.
 
-This feature is a per image CSV export gives a user full transparency into the calculations that are happening for each ROI behind the scenes. It gives users complete access to the raw values so they can reproduce the calculations by hand.
+This feature allows you to export a per-image CSV file, giving you full transparency into the calculations performed for each ROI behind the scenes. It provides complete access to the raw values, enabling you to reproduce the calculations manually if desired.
 
-1. open the file menu
-1. click audit image
-1. select an output location for the CSV
+1. Open the file menu.
+2. Click **Audit Image**.
+3. Select an output location for the CSV file.
 
 > If you find any issues with the integrity of our data, please [file a bug](https://github.com/blackberryfloat/western-blot-utility-docs/issues) immediately.

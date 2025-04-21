@@ -1,8 +1,13 @@
 # Exports
 
-This application allows you to export the calculated intensities for this experiment to a CSV. Currently you can select from summed, average, and normalized. Summed is recommended if you have no controls and normalized is recommended if you labeled your controls. The normalized value will be calculated if you provide any combination of a loading control, internal control, or both. If there are no controls, you will get an empty CSV.
+This application allows you to export the calculated intensities for your experiment to a CSV file. You can choose from three export methods: summed, average, and normalized.
 
-1. open the file menu
-1. click export
-1. select the relevant export method (ie normalized)
-1. select an output location in the file dialog
+- **Summed** is recommended if you have no controls.
+- **Normalized** is recommended if you have labeled your controls. The normalized value is calculated if you provide any combination of a loading control, internal control, or both.
+
+If no controls are provided, the export will result in an empty CSV file.
+
+1. Open the file menu.
+2. Click **Export**.
+3. Select the desired export method (e.g., normalized).
+4. Choose an output location in the file dialog.

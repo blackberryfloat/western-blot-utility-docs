@@ -1,19 +1,30 @@
 # Installation
 
-The Western Blot Utility is a licensed desktop application. We have prebuilt binaries for x86_64 architectures running Windows or Linux operating systems that you can download below. If you need a custom build, reach out to [blackberryfloat+wbu@gmail.com](mailto:blackberryfloat+wbu@gmail.com).
+The Western Blot Utility is a licensed desktop application. We have prebuilt tested binaries for x86_64 architectures running Windows or Linux operating systems that you can download below. If you need a custom build, reach out to [blackberryfloat+wbu@gmail.com](mailto:blackberryfloat+wbu@gmail.com).
 
 ## Licensing
 
-While the Western Blot Utility is a licensed application, licenses are currently being offered free of charge. For all licensing requests, please reach out to [blackberryfloat+wbu@gmail.com](mailto:blackberryfloat+wbu@gmail.com).
+While the Western Blot Utility is a licensed application, licenses are currently being offered free of charge. For all licensing requests, please reach out to [blackberryfloat+wbu@gmail.com](mailto:blackberryfloat+wbu@gmail.com). Please use the email address you want the license associated with when reaching out. Currently, we only allow one device per user, with exceptions being handled on a case-by-case basis. As noted in the introduction, this project is in its infancy, meaning it is unfunded at this time, so please be patient with response times.
 
 ## Windows
 
-TBD
+Download the executable linked below by clicking the link. This binary is a `.exe` file, so your device might flag it as untrusted and require your permission to run. This is expected.
+
+[x86_64_windows_western_blot_utility.exe](./x86_64_windows_western_blot_utility.exe)
+
+Once downloaded, you can double-click the file to run the application, and that is it! Happy analyzing!
 
 ## Linux
 
-TBD
+Download the executable linked below by clicking the link. This binary is an executable file, so your device might flag it as untrusted and require your permission to run. This is expected.
+
+[x86_64_linux_western_blot_utility](./x86_64_linux_western_blot_utility)
+
+Once downloaded, you can double-click the file to run the application, and that is it! Happy analyzing!
 
 ## Mac
 
-TBD
+> **WARNING**
+> This application is untested on Apple devices.
+
+[x86_64_apple_darwin_western_blot_utility](./x86_64_apple_darwin_western_blot_utility)

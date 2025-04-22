@@ -22,6 +22,9 @@ Download the executable linked below by clicking the link. This binary is an exe
 
 Once downloaded, you can double-click the file to run the application, and that is it! Happy analyzing!
 
+> **NOTE**
+> You might have to mark the file as executable before you can double click it to run. You can do this by right clicking on the file in the folder explorer, click the properties option, and toggle the "Executable as program" button to "on". You can also open the file in the terminal and use the `chmod +x <filename>` command.
+
 ## Mac
 
 > **WARNING**

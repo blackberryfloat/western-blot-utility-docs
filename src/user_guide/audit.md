@@ -1,5 +1,9 @@
 # Audit
 
+<iframe width="640" height="360" src="https://youtube.com/embed/avbQl4LBCbM">
+    video demoing export of audit data to csv
+</iframe>
+
 Producing accurate results is our top priority. All data measurements are taken directly from the raw image without any scaling. Calculations are based on published methods and are supported by an extensive suite of automated test cases, along with manual verification by beta users. However, mistakes can happen, so we provide the audit functionality to empower you to double-check our work if needed.
 
 This feature allows you to export a per-image CSV file, giving you full transparency into the calculations performed for each ROI behind the scenes. It provides complete access to the raw values, enabling you to reproduce the calculations manually if desired.

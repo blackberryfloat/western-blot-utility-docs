@@ -1,5 +1,9 @@
 # Opening an Experiment
 
+<iframe width="640" height="360" src="https://youtube.com/embed/Pds_3Lcp6qE">
+    video demoing how to open an experiment
+</iframe>
+
 The process for opening an experiment or creating a new one is the same:
 
 1. Open the file menu.

@@ -7,6 +7,10 @@ To quantify an image, select the relevant image in the explorer panel on the lef
 
 ## Reference ROI Extrapolation
 
+<iframe width="640" height="360" src="https://youtube.com/embed/62nNscTMgDY">
+    video demoing auto detection functionality
+</iframe>
+
 Currently, the application supports one proprietary quantification method called **Reference ROI Extrapolation**.
 
 > **NOTE**  
@@ -16,6 +20,10 @@ To use this method, start by drawing a rectangle around the relevant ROI on the 
 
 > **NOTE**  
 > Tight reference ROIs tend to yield the best results.
+
+<iframe width="640" height="360" src="https://youtube.com/embed/yx1_k3nSIqg">
+    video demoing management functionality
+</iframe>
 
 ### Resize
 

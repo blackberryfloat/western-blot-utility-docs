@@ -10,7 +10,7 @@ While the Western Blot Utility is a licensed application, licenses are FREE. For
 
 Download the executable linked below by clicking the link. This binary is a `.exe` file, so your device might flag it as untrusted and require your permission to run. This is expected.
 
-[x86_64_windows_western_blot_utility.exe](./x86_64_windows_western_blot_utility.exe)
+[x86_64_windows_western_blot_utility_v0_2_0.exe](./x86_64_windows_western_blot_utility_v0_2_0.exe)
 
 Once downloaded, you can double-click the file to run the application, and that is it! Happy analyzing!
 
@@ -18,7 +18,7 @@ Once downloaded, you can double-click the file to run the application, and that 
 
 Download the executable linked below by clicking the link. This binary is an executable file, so your device might flag it as untrusted and require your permission to run. This is expected.
 
-[x86_64_linux_western_blot_utility](./x86_64_linux_western_blot_utility)
+[x86_64_linux_western_blot_utility_v0_2_0](./x86_64_linux_western_blot_utility_v0_2_0)
 
 Once downloaded, you can double-click the file to run the application, and that is it! Happy analyzing!
 
@@ -30,4 +30,4 @@ Once downloaded, you can double-click the file to run the application, and that 
 > **WARNING**
 > This application is untested on Apple devices.
 
-[x86_64_apple_darwin_western_blot_utility](./x86_64_apple_darwin_western_blot_utility)
+[x86_64_apple_darwin_western_blot_utility_v0_2_0](./x86_64_apple_darwin_western_blot_utility_v0_2_0)

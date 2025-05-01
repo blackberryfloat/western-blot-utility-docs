@@ -4,7 +4,7 @@ The Western Blot Utility is a licensed desktop application. We have prebuilt tes
 
 ## Licensing
 
-While the Western Blot Utility is a licensed application, licenses are currently being offered free of charge. For all licensing requests, please reach out to [blackberryfloat+wbu@gmail.com](mailto:blackberryfloat+wbu@gmail.com). Please use the email address you want the license associated with when reaching out. Currently, we only allow one device per user, with exceptions being handled on a case-by-case basis. As noted in the introduction, this project is in its infancy, meaning it is unfunded at this time, so please be patient with response times.
+While the Western Blot Utility is a licensed application, licenses are FREE. For all licensing requests, please reach out to [blackberryfloat+wbu@gmail.com](mailto:blackberryfloat+wbu@gmail.com). Please use the email address you want the license associated with when reaching out. Currently, we only allow one device per user, with exceptions being handled on a case-by-case basis.
 
 ## Windows
 

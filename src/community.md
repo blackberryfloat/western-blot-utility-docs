@@ -4,7 +4,7 @@ Community feedback and engagement is welcome, encouraged in fact!
 
 ## Submit Application Feedback
 
-We always want to know what we can do to make our product better. You are our best resource. You can submit feedback by creating a new issue [here](https://github.com/blackberryfloat/western-blot-utility-docs/issues).
+We always want to know what we can do to make our product better. You are our best resource. You can submit feedback by filling out this form [here](https://forms.gle/KQFUev164QHnNw178).
 
 If the feedback is about how to improve the product, use the new feature template.
 

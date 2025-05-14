@@ -42,10 +42,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build with mdBook
         run: mdbook build
-      - name: Add AdSense and Analytics scripts to HTML files
-        run: |
-          find ./book -name '*.html' -exec sed -i 's|<head>|<head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7754158240191404" crossorigin="anonymous"></script>|' {} +
-          find ./book -name '*.html' -exec sed -i "s|<head>|<head><script async src=\"https://www.googletagmanager.com/gtag/js?id=G-BH2MZC1S69\"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BH2MZC1S69');</script>|" {} +
+      - name: Post build script
+        run: tools/post_build.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

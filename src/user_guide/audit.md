@@ -13,3 +13,5 @@ This feature allows you to export a per-image CSV file, giving you full transpar
 3. Select an output location for the CSV file.
 
 > If you find any issues with the integrity of our data, please [file a bug](https://github.com/blackberryfloat/western-blot-utility-docs/issues) immediately.
+
+{IN_ARTICLE_AD}

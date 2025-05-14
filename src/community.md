@@ -21,3 +21,5 @@ If you have a question about how to use the software, feel free to open a new di
 ## Other
 
 For any other communication needs, don't hesitate to reach out to [blackberryfloat+wbu@gmail.com](mailto:blackberryfloat+wbu@gmail.com).
+
+{IN_ARTICLE_AD}

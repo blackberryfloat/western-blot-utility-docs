@@ -15,3 +15,5 @@ If no controls are provided, the export will result in an empty CSV file.
 2. Click **Export**.
 3. Select the desired export method (e.g., normalized).
 4. Choose an output location in the file dialog.
+
+{IN_ARTICLE_AD}

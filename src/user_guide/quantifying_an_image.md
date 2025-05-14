@@ -16,6 +16,8 @@ Currently, the application supports one proprietary quantification method called
 > **NOTE**  
 > This is a heuristic algorithm designed to assist users, not automate the process. It may not always provide an ideal solution. It works best with clean images that are not skewed and have a clear distinction between background and foreground.
 
+{IN_ARTICLE_AD}
+
 To use this method, start by drawing a rectangle around the relevant ROI on the far left. This is done via a click-and-drag process. When you release the mouse, the rectangle will be finalized, and all other ROIs will be automatically estimated. At this point, you can resize, move, add, or delete ROIs as needed. You can also restart the process using the undo pathway, the **Clear ROIs** button, or the **Clear Lanes** button. The right-side panel provides a quick snapshot of intensity values per lane/ROI and allows you to label controls.
 
 > **NOTE**  
@@ -45,3 +47,5 @@ It is important to note that deleting an ROI is not the same as deleting a lane.
 
 > **WARNING**  
 > The independent control of ROIs and lanes is intentional but can lead to confusing behavior if not handled carefully. The most common issue is extra lanes with no associated ROIs. This can cause loading controls to be ignored, as they won't match the target lane count. To resolve this, remove the extra lanes when this occurs.
+
+{IN_ARTICLE_AD}

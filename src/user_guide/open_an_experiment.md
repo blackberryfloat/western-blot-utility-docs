@@ -12,3 +12,5 @@ The process for opening an experiment or creating a new one is the same:
 
 > **NOTE**  
 > A file with the `.wbu` extension will be created in the selected folder. This file contains the application state information for that experiment. It is a JSON object, meaning it is human-readable if you want to inspect it. However, it is strongly recommended that you do NOT modify it, as this could cause issues when the application is loaded next time.
+
+{IN_ARTICLE_AD}

@@ -31,3 +31,5 @@ Once downloaded, you can double-click the file to run the application, and that 
 > This application is untested on Apple devices.
 
 [x86_64_apple_darwin_western_blot_utility_v0_2_0](./x86_64_apple_darwin_western_blot_utility_v0_2_0)
+
+{IN_ARTICLE_AD}

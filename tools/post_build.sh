@@ -2,7 +2,7 @@
 set -euo pipefail
 
 MAJOR_VERSION=0
-MINOR_VERSION=2
+MINOR_VERSION=3
 PATCH_VERSION=0
 VERSION="v$MAJOR_VERSION.$MINOR_VERSION.$PATCH_VERSION"
 VERSION_STR="v${MAJOR_VERSION}_${MINOR_VERSION}_${PATCH_VERSION}"
@@ -42,6 +42,7 @@ replace_download_links() {
     "WINDOWS_X86_64_EXE") file_path="./wbu_x86_64_windows_$VERSION_STR.exe" ;;
     "LINUX_X86_64")      file_path="./wbu_x86_64_linux_$VERSION_STR" ;;
     "MAC_INTEL_X86_64")  file_path="./wbu_x86_64_mac_intel_$VERSION_STR" ;;
+    "MAC_APPLE_SILICON_X86_64")  file_path="./wbu_aarch64_mac_apple_silicon_$VERSION_STR" ;;
     *) echo "Invalid key to replace." && exit 1 ;;
   esac
 
@@ -51,9 +52,10 @@ replace_download_links() {
   createDownloadHtml "$html_file" "$file_path"
 
   case "$1" in
-    "WINDOWS_X86_64_EXE") button_text="Download Windows x86_64 Executable" ;;
-    "LINUX_X86_64")      button_text="Download Linux x86_64 Executable" ;;
-    "MAC_INTEL_X86_64")  button_text="Download Mac Intel x86_64 Executable" ;;
+    "WINDOWS_X86_64_EXE") button_text="Western Blot Utility for Windows" ;;
+    "LINUX_X86_64")      button_text="Western Blot Utility for Linux" ;;
+    "MAC_INTEL_X86_64")  button_text="Western Blot Utility for Mac with Intel Chip" ;;
+    "MAC_APPLE_SILICON_X86_64")  button_text="Western Blot Utility for Mac with Apple Silicon" ;;
   esac
 
   # Handle download button replacement
@@ -63,7 +65,7 @@ replace_download_links() {
       style="color: #fff; text-decoration: none;" \
       class="download-btn" \
       href="./'"$html_file"'" \
-      title="Download application '"$VERSION"'">'"$button_text"'</a>'
+      title="Download executable for '"$VERSION"'">'"$button_text"'</a>'
 
   sed -i 's|'"$SRC"'|'"$DST"'|g' "./book/installation.html"
   echo "Inserted download button for $1 in installation.html"
@@ -72,6 +74,7 @@ replace_download_links() {
 replace_download_links "WINDOWS_X86_64_EXE"
 replace_download_links "LINUX_X86_64"
 replace_download_links "MAC_INTEL_X86_64"
+replace_download_links "MAC_APPLE_SILICON_X86_64"
 echo "Post-build script completed."
 
 # Append download-button styles to general.css
@@ -96,5 +99,5 @@ EOF
 
 echo "Appended download-button CSS to book/css/general.css"
 
-mv ./assets/sun-logo-512.svg ./book/favicon.svg
-mv ./assets/sun-logo-512.png ./book/favicon.png
+cp ./assets/sun-logo-512.svg ./book/favicon.svg
+cp ./assets/sun-logo-512.png ./book/favicon.png

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Download</title>
+  <style>
+    /* Full-screen overlay */
+    html, body { margin:0; padding:0; height:100%; overflow:hidden; }
+    #overlay {
+      position: fixed; top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.85);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      color: #fff; font-family: sans-serif;
+    }
+    #countdown { font-size: 3rem; margin: .5em 0; }
+    #download-link {
+      display: none;
+      padding: .75em 1.5em;
+      background: #ff6600; color: #fff;
+      text-decoration: none; border-radius: 4px;
+      font-size: 1.25rem;
+    }
+    #download-link:hover { background: #e65500; }
+  </style>
+  <script>
+    // Configurable values
+    const DOWNLOAD_URL = './null';   // <-- path to your file
+    const WAIT_SECONDS  = 30;        // <-- countdown seconds
+  </script>
+</head>
+<body>
+  <div id="overlay">
+    <!-- AdSense Display -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7754158240191404"
+            crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; width:320px; height:250px; background-color: #fff;"
+         data-ad-client="ca-pub-7754158240191404"
+         data-ad-slot="2807805747"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div>Your download will begin in <span id="countdown"></span> seconds…</div>
+    <p>Thank you for your patience, advertisements help us fund our mission!</p>
+  </div>
+
+  <script>
+    let seconds = WAIT_SECONDS;
+    const cnt = document.getElementById('countdown');
+    const link = document.getElementById('download-link');
+    cnt.textContent = seconds;
+    // update countdown every second
+    const timer = setInterval(() => {
+       seconds--;
+       if (seconds > 0) {
+         cnt.textContent = seconds;
+       } else {
+         clearInterval(timer);
+         const dl = document.createElement('a');
+         dl.href = DOWNLOAD_URL;
+         dl.download = '';
+         document.body.appendChild(dl);
+         dl.click();
+         document.body.removeChild(dl);
+         window.location.href = './installation.html';
+       }
+    }, 1000);
+  </script>
+</body>
+</html>

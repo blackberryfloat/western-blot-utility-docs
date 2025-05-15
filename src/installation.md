@@ -6,11 +6,13 @@ The Western Blot Utility is a licensed desktop application. We have prebuilt tes
 
 While the Western Blot Utility is a licensed application, licenses are FREE. For all licensing requests, please reach out to [blackberryfloat+wbu@gmail.com](mailto:blackberryfloat+wbu@gmail.com). Please use the email address you want the license associated with when reaching out. Currently, we only allow one device per user, with exceptions being handled on a case-by-case basis.
 
+> **NOTE** To be transparent, we need to fund development so we can best support you. Thus, our goal is to always give you the option of either a free version with minimal Ads or a paid license. To support this we must reach a critical mass of users so that advertisers are interested in this platform. The free licenses are the best way to track this information.
+
 ## Windows
 
 Download the executable linked below by clicking the link. This binary is a `.exe` file, so your device might flag it as untrusted and require your permission to run. This is expected.
 
-[x86_64_windows_western_blot_utility_v0_2_0.exe](./x86_64_windows_western_blot_utility_v0_2_0.exe)
+{WINDOWS_X86_64_EXE}
 
 Once downloaded, you can double-click the file to run the application, and that is it! Happy analyzing!
 
@@ -18,7 +20,7 @@ Once downloaded, you can double-click the file to run the application, and that 
 
 Download the executable linked below by clicking the link. This binary is an executable file, so your device might flag it as untrusted and require your permission to run. This is expected.
 
-[x86_64_linux_western_blot_utility_v0_2_0](./x86_64_linux_western_blot_utility_v0_2_0)
+{LINUX_X86_64}
 
 Once downloaded, you can double-click the file to run the application, and that is it! Happy analyzing!
 
@@ -30,6 +32,6 @@ Once downloaded, you can double-click the file to run the application, and that 
 > **WARNING**
 > This application is untested on Apple devices.
 
-[x86_64_apple_darwin_western_blot_utility_v0_2_0](./x86_64_apple_darwin_western_blot_utility_v0_2_0)
+{MAC_INTEL_X86_64}
 
 {IN_ARTICLE_AD}

@@ -75,7 +75,6 @@ replace_download_links "WINDOWS_X86_64_EXE"
 replace_download_links "LINUX_X86_64"
 replace_download_links "MAC_INTEL_X86_64"
 replace_download_links "MAC_APPLE_SILICON_X86_64"
-echo "Post-build script completed."
 
 # Append download-button styles to general.css
 cat <<'EOF' >> ./book/css/general.css
@@ -126,3 +125,43 @@ BASE_URL="https://wbudocs.blackberryfloat.com"
 } > "$SITEMAP_FILE"
 
 echo "Generated sitemap.xml at $SITEMAP_FILE"
+
+# Add Open Graph tags to HTML files
+BASE_URL="https://wbudocs.blackberryfloat.com"
+
+OG_TAGS=$(cat << EOF
+<!-- Open Graph -->
+<meta property="og:site_name"   content="Western Blot Utility Docs" />
+<meta property="og:type"        content="website" />
+<meta property="og:title"       content="Western Blot Utility Docs – Streamlined Blot Analysis" />
+<meta property="og:description" content="Western Blot Utility by Blackberry Float provides automated, transparent blot analysis. Try the free trial for band detection & normalization workflows." />
+<meta property="og:url"         content="__PAGE_URL__" />
+<meta property="og:image"       content="__IMAGE_URL__" />
+EOF
+)
+OG_TAGS=$(echo $OG_TAGS | sed "s|__IMAGE_URL__|$BASE_URL/favicon.png|")
+echo $OG_TAGS
+
+find ./book -name '*.html' | while read -r page; do
+  # compute canonical URL
+  rel="${page#./book/}"
+  if [[ "$rel" == "index.html" ]]; then
+    page_url="$BASE_URL/"
+  elif [[ "$rel" =~ /index.html$ ]]; then
+    page_url="$BASE_URL/${rel%/index.html}/"
+  else
+    page_url="$BASE_URL/$rel"
+  fi
+
+  OG_TAGS=$(echo "$OG_TAGS" | sed "s|__PAGE_URL__|$page_url|")
+  tmpf=$(mktemp)
+  printf '%s\n' "$OG_TAGS" > "$tmpf"
+  sed -i '/<meta charset="UTF-8">/r '"$tmpf" "$page"
+
+  rm "$tmpf"
+  echo "Injected OG into $rel"
+done
+
+echo "Open Graph tags added to all HTML files in the book directory."
+echo ""
+echo "Post-build script completed successfully."

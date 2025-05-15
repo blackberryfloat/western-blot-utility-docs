@@ -2,7 +2,7 @@
 
 Community feedback and engagement is welcome, encouraged in fact!
 
-## Submit Application Feedback
+## Submit Feedback
 
 We always want to know what we can do to make our product better. You are our best resource. You can submit feedback by filling out this form [here](https://forms.gle/KQFUev164QHnNw178).
 

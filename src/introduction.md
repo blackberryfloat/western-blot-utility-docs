@@ -1,7 +1,7 @@
 # Introduction
 
 <iframe width="640" height="360" src="https://youtube.com/embed/qmUocK8RJ48">
-    application demo
+    Demo of the Western Blot Utility being used for western blot analysis.
 </iframe>
 
 The Western Blot Utility is a desktop application designed for organizing and quantifying Western Blot data. It emphasizes privacy, data integrity, and transparency, allowing you to trust but verify how your data is handled. All data remains confidential and local to your machine.

@@ -1,14 +1,14 @@
-# Quantifying an Image
+# Quantifying a Western Blot Image
 
 > **NOTE**  
 > This assumes you have already opened the experiment as outlined in [Opening an Experiment](./open_an_experiment.md).
 
 To quantify an image, select the relevant image in the explorer panel on the left. Images are listed under the **Data** collapsible header. Selecting an image will open it for annotation.
 
-## Reference ROI Extrapolation
+## Reference Region of Interest Extrapolation
 
 <iframe width="640" height="360" src="https://youtube.com/embed/62nNscTMgDY">
-    video demoing auto detection functionality
+    Demo of the Western Blot Utility auto detection of western blot bands.
 </iframe>
 
 Currently, the application supports one proprietary quantification method called **Reference ROI Extrapolation**.
@@ -24,22 +24,22 @@ To use this method, start by drawing a rectangle around the relevant ROI on the 
 > Tight reference ROIs tend to yield the best results.
 
 <iframe width="640" height="360" src="https://youtube.com/embed/bxRg5M3tU0Q">
-    video demoing management functionality
+    Demo of the Western Blot Utility being used to manually manage regions of interest and lanes to ensure proper annotation before quanitifcation and analysis.
 </iframe>
 
-### Resize
+### Resize a Region of Interest
 
 All resize operations apply globally to all ROIs. Currently, the application does not support independently resizing individual ROIs. At the top of the right-side panel, you will find widgets for modifying the width and height of ROIs.
 
-### Move (Translate)
+### Move (Translate) a Region of Interest
 
 To move an ROI, click and hold inside the ROI, then drag it to the desired position. For fine control over a specific ROI, hover over it to view the lane ID. In the right-side panel, you can use the fields under the associated lane header to adjust the x and y pixel positions of the ROI's top-left corner.
 
-### Add
+### Add a Region of Interest
 
 You can add an ROI at any time by clicking on the image. A new rectangle will be created at the cursor's position.
 
-### Delete
+### Delete a Lane and/or Region of Interest
 
 To delete an ROI, right-click on it to open the context menu, then select **Delete**. Alternatively, you can use the **Del** button, but this will only remove the last ROI. If you need to restart, use the **Clear ROIs** button at the top of the right-side panel.
 

@@ -101,3 +101,28 @@ echo "Appended download-button CSS to book/css/general.css"
 
 cp ./assets/sun-logo-512.svg ./book/favicon.svg
 cp ./assets/sun-logo-512.png ./book/favicon.png
+
+# Generate sitemap.xml
+SITEMAP_FILE="./book/sitemap.xml"
+BASE_URL="https://wbudocs.blackberryfloat.com"
+
+{
+  echo '<?xml version="1.0" encoding="UTF-8"?>'
+  echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+  find ./book -type f -name '*.html' | while read -r file; do
+    rel_path="${file#./book/}"
+    url_path="${rel_path// /%20}"
+    # Remove index.html from URLs for root and subdirs
+    if [[ "$url_path" == "index.html" ]]; then
+      url="$BASE_URL/"
+    elif [[ "$url_path" == */index.html ]]; then
+      url="$BASE_URL/${url_path%/index.html}/"
+    else
+      url="$BASE_URL/$url_path"
+    fi
+    echo "  <url><loc>$url</loc></url>"
+  done
+  echo '</urlset>'
+} > "$SITEMAP_FILE"
+
+echo "Generated sitemap.xml at $SITEMAP_FILE"

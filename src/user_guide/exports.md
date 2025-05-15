@@ -1,7 +1,7 @@
-# Exports
+# Export Quantification Data
 
 <iframe width="640" height="360" src="https://youtube.com/embed/eY1ggslujiM">
-    video demoing export functionality
+    Demo of how to export western blot quantification data in the Western Blot Utility.
 </iframe>
 
 This application allows you to export the calculated intensities for your experiment to a CSV file. You can choose from three export methods: summed, average, and normalized.

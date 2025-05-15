@@ -6,6 +6,7 @@ MINOR_VERSION=3
 PATCH_VERSION=0
 VERSION="v$MAJOR_VERSION.$MINOR_VERSION.$PATCH_VERSION"
 VERSION_STR="v${MAJOR_VERSION}_${MINOR_VERSION}_${PATCH_VERSION}"
+BASE_URL="https://wbudocs.blackberryfloat.com"
 
 # Add Inline Ads to specific locations in HTML files
 # Looks for {IN_ARTICLE_AD} placeholder and replaces it with the ad code
@@ -103,7 +104,6 @@ cp ./assets/sun-logo-512.png ./book/favicon.png
 
 # Generate sitemap.xml
 SITEMAP_FILE="./book/sitemap.xml"
-BASE_URL="https://wbudocs.blackberryfloat.com"
 
 {
   echo '<?xml version="1.0" encoding="UTF-8"?>'
@@ -127,8 +127,6 @@ BASE_URL="https://wbudocs.blackberryfloat.com"
 echo "Generated sitemap.xml at $SITEMAP_FILE"
 
 # Add Open Graph tags to HTML files
-BASE_URL="https://wbudocs.blackberryfloat.com"
-
 OG_TAGS=$(cat << EOF
 <!-- Open Graph -->
 <meta property="og:site_name"   content="Western Blot Utility Docs" />

@@ -8,7 +8,7 @@ While the Western Blot Utility is a licensed application, licenses are FREE. For
 
 > **NOTE** To be transparent, we need to fund development so we can best support you. Thus, our goal is to always give you the option of either a free version with minimal Ads or a paid license. To support this we must reach a critical mass of users so that advertisers are interested in this platform. The free licenses are the best way to track this information.
 
-## Windows
+## Install Western Blot Utility on Windows
 
 Download the executable linked below by clicking the button. This binary is a `.exe` file, so your device might flag it as untrusted and require your permission to run. This is expected.
 
@@ -16,7 +16,7 @@ Download the executable linked below by clicking the button. This binary is a `.
 
 Once downloaded, you can double-click the file to run the application, and that is it! Happy analyzing!
 
-## Linux
+## Install Western Blot Utility on Linux
 
 Download the executable linked below by clicking the button. This binary is an executable file, so your device might flag it as untrusted and require your permission to run. This is expected.
 
@@ -27,7 +27,7 @@ Once downloaded, mark the file as executable as noted below, and then you can do
 > **NOTE**
 > You might have to mark the file as executable before you can double click it to run. You can do this by right clicking on the file in the folder explorer, click the properties option, and toggle the "Executable as program" button to "on". You can also open the file in the terminal and use the `chmod +x <filename>` command.
 
-## Mac
+## Install Western Blot Utility on Mac
 
 We currently support executable files for Macs with either Apple Silicon or Intel chips. Download the file by clicking the relevant button below. Mac will most likely flag the executable as untrusted since it is not being delivered through the App Store. This is expected.
 

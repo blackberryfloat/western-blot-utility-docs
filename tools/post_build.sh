@@ -6,6 +6,7 @@ MINOR_VERSION=3
 PATCH_VERSION=0
 VERSION="v$MAJOR_VERSION.$MINOR_VERSION.$PATCH_VERSION"
 VERSION_STR="v${MAJOR_VERSION}_${MINOR_VERSION}_${PATCH_VERSION}"
+BASE_URL="https://wbudocs.blackberryfloat.com"
 
 # Add Inline Ads to specific locations in HTML files
 # Looks for {IN_ARTICLE_AD} placeholder and replaces it with the ad code
@@ -75,7 +76,6 @@ replace_download_links "WINDOWS_X86_64_EXE"
 replace_download_links "LINUX_X86_64"
 replace_download_links "MAC_INTEL_X86_64"
 replace_download_links "MAC_APPLE_SILICON_X86_64"
-echo "Post-build script completed."
 
 # Append download-button styles to general.css
 cat <<'EOF' >> ./book/css/general.css
@@ -101,3 +101,65 @@ echo "Appended download-button CSS to book/css/general.css"
 
 cp ./assets/sun-logo-512.svg ./book/favicon.svg
 cp ./assets/sun-logo-512.png ./book/favicon.png
+
+# Generate sitemap.xml
+SITEMAP_FILE="./book/sitemap.xml"
+
+{
+  echo '<?xml version="1.0" encoding="UTF-8"?>'
+  echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+  find ./book -type f -name '*.html' | while read -r file; do
+    rel_path="${file#./book/}"
+    url_path="${rel_path// /%20}"
+    # Remove index.html from URLs for root and subdirs
+    if [[ "$url_path" == "index.html" ]]; then
+      url="$BASE_URL/"
+    elif [[ "$url_path" == */index.html ]]; then
+      url="$BASE_URL/${url_path%/index.html}/"
+    else
+      url="$BASE_URL/$url_path"
+    fi
+    echo "  <url><loc>$url</loc></url>"
+  done
+  echo '</urlset>'
+} > "$SITEMAP_FILE"
+
+echo "Generated sitemap.xml at $SITEMAP_FILE"
+
+# Add Open Graph tags to HTML files
+OG_TAGS=$(cat << EOF
+<!-- Open Graph -->
+<meta property="og:site_name"   content="Western Blot Utility Docs" />
+<meta property="og:type"        content="website" />
+<meta property="og:title"       content="Western Blot Utility Docs – Streamlined Blot Analysis" />
+<meta property="og:description" content="Western Blot Utility by Blackberry Float provides automated, transparent blot analysis. Try the free trial for band detection & normalization workflows." />
+<meta property="og:url"         content="__PAGE_URL__" />
+<meta property="og:image"       content="__IMAGE_URL__" />
+EOF
+)
+OG_TAGS=$(echo $OG_TAGS | sed "s|__IMAGE_URL__|$BASE_URL/favicon.png|")
+echo $OG_TAGS
+
+find ./book -name '*.html' | while read -r page; do
+  # compute canonical URL
+  rel="${page#./book/}"
+  if [[ "$rel" == "index.html" ]]; then
+    page_url="$BASE_URL/"
+  elif [[ "$rel" =~ /index.html$ ]]; then
+    page_url="$BASE_URL/${rel%/index.html}/"
+  else
+    page_url="$BASE_URL/$rel"
+  fi
+
+  OG_TAGS=$(echo "$OG_TAGS" | sed "s|__PAGE_URL__|$page_url|")
+  tmpf=$(mktemp)
+  printf '%s\n' "$OG_TAGS" > "$tmpf"
+  sed -i '/<meta charset="UTF-8">/r '"$tmpf" "$page"
+
+  rm "$tmpf"
+  echo "Injected OG into $rel"
+done
+
+echo "Open Graph tags added to all HTML files in the book directory."
+echo ""
+echo "Post-build script completed successfully."

@@ -1,6 +1,10 @@
 [book]
-authors = ["blackberryfloat"]
+title = "Western Blot Utility Docs"
+authors = ["Blackberry Float"]
+description = "Western blot quatification tool Western Blot Utility, by Blackberry Float, streamlines western blot analysis. Featuring built in normalization, automated band detection, and an intuitive workflow, it delivers reliable, transparent, and rapid quantification of your blot data."
 language = "en"
 multilingual = false
 src = "src"
-title = "docs"
+
+[build]
+create-missing = false

@@ -1,7 +1,7 @@
-# Opening an Experiment
+# Opening a Western Blot Experiment
 
 <iframe width="640" height="360" src="https://youtube.com/embed/Pds_3Lcp6qE">
-    video demoing how to open an experiment
+    Demo of how to open an experiment in the Western Blot Utility.
 </iframe>
 
 The process for opening an experiment or creating a new one is the same:

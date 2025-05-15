@@ -95,3 +95,6 @@ cat <<'EOF' >> ./book/css/general.css
 EOF
 
 echo "Appended download-button CSS to book/css/general.css"
+
+mv ./assets/sun-logo-512.svg ./book/favicon.svg
+mv ./assets/sun-logo-512.png ./book/favicon.png

@@ -1,18 +1,49 @@
-# Introduction
+# Western Blot Utility: Streamlining Blot Analysis with Precision and Efficiency
+
+Experience the next generation of western blot analysis with our comprehensive software solution.
 
 <iframe width="640" height="360" src="https://youtube.com/embed/qmUocK8RJ48">
     Demo of the Western Blot Utility being used for western blot analysis.
 </iframe>
 
-The Western Blot Utility is a desktop application designed for organizing and quantifying Western Blot data. It emphasizes privacy, data integrity, and transparency, allowing you to trust but verify how your data is handled. All data remains confidential and local to your machine.
-If you do one or more of the following, the Western Blot Utility might be for you:
+**Western Blot Utility** is a modern desktop application built to streamline the **organization, quantification, and analysis** of western blot experiments. Designed with a focus on **data integrity, transparency, and privacy**, it empowers researchers to produce consistent, auditable, and reproducible results—**without relying on manual macros or third-party plugins**.
 
-1. process a significant number of Western Blot Images
-1. you want a tool to consistently and reliably handle normalization calculations for you
+All data remains private and is stored **locally on your machine**—never sent to the cloud—giving you full control over sensitive research data.
 
-Producing accurate results is our top priority. All data measurements are taken directly from the raw image without any scaling. Calculations are based on published methods and are supported by an extensive suite of automated test cases, along with manual verification by beta users. If you encounter any issues with the integrity of our data, please [file a bug](https://github.com/blackberryfloat/western-blot-utility-docs/issues) immediately.
+## Key Features
 
-Our goal is to provide a solution that delivers value to you, if you have feedback pleases dont hesitate to reach out. [Feedback](community.md)
+- **End-to-End Experiment Management:** Seamlessly group and analyze multiple images within a single experiment, ensuring consistent and reproducible results.
+- **Automated Band Detection:** Utilize advanced algorithms to automatically identify and quantify bands, significantly reducing manual intervention and potential errors.
+- **Comprehensive Normalization:** Achieve accurate normalization across your dataset, facilitating reliable comparisons and robust data interpretation.
+- **Integrated Audit Capabilities:** Maintain full transparency with built-in audit logs, enabling traceability and verification of all analytical steps.
+- **User-Friendly Interface:** Navigate effortlessly through your data with intuitive controls, including save states, undo/redo functionality, and efficient image navigation.
+
+## Who Is This For?
+
+The Western Blot Utility is ideal for researchers who:
+
+1. **Process large volumes** of western blot images  
+2. **Need consistent and automated normalization** of blot data  
+3. **Value reproducibility**, transparency, and auditability in their workflow  
+4. Are frustrated with fragmented workflows in tools like ImageJ, Image Studio, or Photoshop
+5. Want basic usability functionality like undo and redo that are frequently missing in scientific tools
+
+## Accuracy You Can Trust
+
+- All measurements are taken **directly from the raw image**—no compression, no scaling.  
+- Calculations are based on **peer-reviewed methods**, tested with a comprehensive suite of **automated and manual validations**.  
+- Built in collaboration with a **third-party researchers (Harvard-affiliated)** to ensure independent validation.
+- Complete transparency: review our [audit documentation](audit.html) for full traceability.
+
+If you ever find a discrepancy, we encourage you to [file a bug](https://github.com/blackberryfloat/western-blot-utility-docs/issues) — transparency and scientific integrity are core to what we do.
+
+## Get Started Today
+
+Ready to jump in? Visit the [Installation](installation.html) page to download Western Blot Utility and start your analysis with our free trial today.
+
+## We Value Your Feedback
+
+We're committed to continuous improvement. If you have suggestions, issues, or ideas for features that would better support your work, [send us your feedback](community.md). Your input helps shape a better tool for the research community.
 
 ## Sponsorship
 

@@ -12,6 +12,8 @@ All data remains private and is stored **locally on your machine**—never sent 
 
 ## Key Features
 
+> **NOTE** We are about to get an exciting ugrade with v1.0.0 to our automated band detection as we transition to using AI rather than a hueristic algorithm.
+
 - **End-to-End Experiment Management:** Seamlessly group and analyze multiple images within a single experiment, ensuring consistent and reproducible results.
 - **Automated Band Detection:** Utilize advanced algorithms to automatically identify and quantify bands, significantly reducing manual intervention and potential errors.
 - **Comprehensive Normalization:** Achieve accurate normalization across your dataset, facilitating reliable comparisons and robust data interpretation.
@@ -33,13 +35,13 @@ The Western Blot Utility is ideal for researchers who:
 - All measurements are taken **directly from the raw image**—no compression, no scaling.  
 - Calculations are based on **peer-reviewed methods**, tested with a comprehensive suite of **automated and manual validations**.  
 - Built in collaboration with a **third-party researchers (Harvard-affiliated)** to ensure independent validation.
-- Complete transparency: review our [audit documentation](audit.html) for full traceability.
+- Complete transparency: review our [audit documentation](user_guide/audit.md) for full traceability.
 
-If you ever find a discrepancy, we encourage you to [file a bug](https://github.com/blackberryfloat/western-blot-utility-docs/issues) — transparency and scientific integrity are core to what we do.
+If you ever find a discrepancy, we encourage you to [file a bug](community.md#submit-feedback) — transparency and scientific integrity are core to what we do.
 
 ## Get Started Today
 
-Ready to jump in? Visit the [Installation](installation.html) page to download Western Blot Utility and start your analysis with our free trial today.
+Ready to jump in? Visit the [Installation](installation.md) page to download Western Blot Utility and start your analysis with our free trial today.
 
 ## We Value Your Feedback
 

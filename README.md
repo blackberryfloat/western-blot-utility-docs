@@ -6,6 +6,16 @@ This is a centralized public platform for the Western Blot Utility community to 
 
 This repo is for user facing documentation of the Western Blot Utility only. All documentation should exist as markdown files in the src folder. 
 
+## Local Host
+
+- [make sure Rust is installed](https://www.rust-lang.org/tools/install)
+- [make sure mdbook is installed](https://rust-lang.github.io/mdBook/guide/installation.html)
+- download the repo
+- open repo in terminal
+- in the root repo run `mdbook serve` and then in a parallel terminal `mdbook build && tools/post_build.sh`
+- open local host url in browser (printed in stdout by mdbook serve)
+- refresh after each rebuild
+
 ## Contribution
 
 Anyone and everyone that is a user of the Western Blot Utility is encouraged to contribute to the documentation. If you find an issue with the docs please create an issues. For the best results, create a pull request with recommend changes that is linked to the created issue. It is recommended that most documentation updates be against the tip of main but if you have any documentation updates that are version specific, be sure to open a pull request against the branch representing that minor version (see release process below for more information).
@@ -24,6 +34,7 @@ In summary, you must be an admin and complete the following steps:
 
 - pick a hash
 - confirm all automated tests have passed
+- confirm the post_build.sh has the correct version number documented
 - create a branch at the relevant hash in the format v\<major\>.\<minor\> (ie v1.33).
 - if necessary perform any last minuted changes
 - create a git tag pointing to the tip of that branch in the format v\<major\>.\<minor\>.0 (ie v1.33.0).

@@ -7,7 +7,7 @@ To quantify an image, select the relevant image in the explorer panel on the lef
 
 ## Reference Region of Interest Extrapolation
 
-<iframe width="640" height="360" src="https://youtube.com/embed/62nNscTMgDY">
+<iframe width="640" height="360" src="https://youtube.com/embed/Wy7Ni0Qsylo">
     Demo of the Western Blot Utility auto detection of western blot bands.
 </iframe>
 

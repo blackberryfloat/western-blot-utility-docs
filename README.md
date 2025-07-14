@@ -44,5 +44,4 @@ The git tag will kick off an automated process that deploys the crate to crates.
 
 ### Hotfix
 
-For a hotfix you merge a commit to the tip of the associated release branch and create a git tag with the relevant version numbering pointing to that new hash. Also add the changes to main if it has not been addressed there. 
-
+For a hotfix you merge a commit to the tip of the associated release branch and create a git tag with the relevant version numbering pointing to that new hash. Also add the changes to main if it has not been addressed there.

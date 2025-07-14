@@ -2,7 +2,7 @@
 set -euo pipefail
 
 MAJOR_VERSION=0
-MINOR_VERSION=4
+MINOR_VERSION=5
 PATCH_VERSION=0
 VERSION="v$MAJOR_VERSION.$MINOR_VERSION.$PATCH_VERSION"
 VERSION_STR="v${MAJOR_VERSION}_${MINOR_VERSION}_${PATCH_VERSION}"
@@ -37,20 +37,15 @@ createDownloadHtml() {
 }
 
 replace_download_links() {
-  local file_path
+  local url
   local button_text
   case "$1" in
-    "WINDOWS_X86_64_EXE") file_path="./wbu_x86_64_windows_$VERSION_STR.exe" ;;
-    "LINUX_X86_64")      file_path="./wbu_x86_64_linux_$VERSION_STR" ;;
-    "MAC_INTEL_X86_64")  file_path="./wbu_x86_64_mac_intel_$VERSION_STR" ;;
-    "MAC_APPLE_SILICON_X86_64")  file_path="./wbu_aarch64_mac_apple_silicon_$VERSION_STR" ;;
+    "WINDOWS_X86_64_EXE") url="https://storage.googleapis.com/wbu_binaries/wbu_x86_64_windows_$VERSION_STR.exe" ;;
+    "LINUX_X86_64")      url="https://storage.googleapis.com/wbu_binaries/wbu_x86_64_linux_$VERSION_STR" ;;
+    "MAC_INTEL_X86_64")  url="https://storage.googleapis.com/wbu_binaries/wbu_x86_64_mac_intel_$VERSION_STR" ;;
+    "MAC_APPLE_SILICON_X86_64")  url="https://storage.googleapis.com/wbu_binaries/wbu_aarch64_mac_apple_silicon_$VERSION_STR" ;;
     *) echo "Invalid key to replace." && exit 1 ;;
   esac
-
-  [ -f "./src/$file_path" ] || { echo "Error: '$file_path' not found"; exit 1; }
-
-  html_file="${1}_download.html"
-  createDownloadHtml "$html_file" "$file_path"
 
   case "$1" in
     "WINDOWS_X86_64_EXE") button_text="Western Blot Utility for Windows" ;;
@@ -65,7 +60,7 @@ replace_download_links() {
       id="download-'"$1"'-btn" \
       style="color: #fff; text-decoration: none;" \
       class="download-btn" \
-      href="./'"$html_file"'" \
+      href="'"$url"'" \
       title="Download executable for '"$VERSION"'">'"$button_text"'</a>'
 
   sed -i 's|'"$SRC"'|'"$DST"'|g' "./book/installation.html"

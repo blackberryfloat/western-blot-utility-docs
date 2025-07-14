@@ -34,6 +34,7 @@ In summary, you must be an admin and complete the following steps:
 
 - pick a hash
 - confirm all automated tests have passed
+- confirm all binaries have been uploaded to the [binaries bucket](https://console.cloud.google.com/storage/browser?inv=1&invt=Ab2wYA&project=western-blot-utility) and given public permission.
 - confirm the post_build.sh has the correct version number documented
 - create a branch at the relevant hash in the format v\<major\>.\<minor\> (ie v1.33).
 - if necessary perform any last minuted changes
